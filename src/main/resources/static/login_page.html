@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+<h2>Login Form</h2>
+<form action="/login" method="post" id="loginForm">
+
+    <div class="formField">
+        <label for="email" class="labelField" id="labelLoginEmail">Email</label>
+        <br>
+        <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
+        <br>
+        <span class="errorMessage" id="errorLoginEmail">Please enter your registered email</span>
+    </div>
+
+    <div class="formField">
+        <label for="password" class="labelField" id="labelLoginPassword">Password</label>
+        <br>
+        <input type="password" id="password" name="password" class="inputField" placeholder="Enter your password" required>
+        <br>
+        <span class="errorMessage" id="errorLoginPassword">Please enter your password</span>
+    </div>
+
+    <div class="formField" id="loginSubmitField">
+        <button type="submit" id="loginButton">Login</button>
+    </div>
+
+</form>
+
+<p>Don’t have an account? <a href="registration_page.html">Register here</a></p>
+</body>
+</html>

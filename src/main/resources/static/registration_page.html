@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form action="/register" method="post" id="registerForm">
+
+    <div class="formField" id="usernameField">
+        <label for="username" class="labelField" id="labelUsername">Username</label>
+        <br>
+        <input type="text" id="username" name="username" class="inputField" placeholder="Enter your username" required>
+        <br>
+        <span class="errorMessage" id="errorUsername">Please enter a valid username</span>
+    </div>
+
+    <div class="formField" id="emailField">
+        <label for="email" class="labelField" id="labelEmail">Email</label>
+        <br>
+        <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
+        <br>
+        <span class="errorMessage" id="errorEmail">Please enter a valid email</span>
+    </div>
+
+    <div class="formField" id="passwordField">
+        <label for="password" class="labelField" id="labelPassword">Password</label>
+        <br>
+        <input type="password" id="password" name="password" class="inputField" placeholder="Enter your password" required>
+        <br>
+        <span class="errorMessage" id="errorPassword">Password must be at least 6 characters</span>
+    </div>
+
+    <div class="formField" id="submitField">
+        <button type="submit" id="registerButton">Register</button>
+    </div>
+
+</form>
+
+<p>Already have an account? <a href="login_page.html">Login here</a></p>
+</body>
+</html>
